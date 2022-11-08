@@ -2,14 +2,15 @@ public class Main {
     public static void main(String[] args) {
 
         int [] massive = new int[3];
-        massive[0] = 1;
-        massive[1] = 2;
-        massive[2] = 3;
-        for (int i = massive.length - 1;  i >= 0; i--) {
-            if (i != 0) {
-                System.out.print(massive[i] + ",");
-            }else
+        massive[0] = 2;
+        massive[1] = 7;
+        massive[2] = 9;
+        for (int i = 0; i < massive.length; i++) {
+            if (massive[i] % 2 != 0) {
+                massive[i]++;
                 System.out.println(massive[i]);
+            }
+
         }
 
         double [] massive1 ={1.57, 7.654, 9.986};
